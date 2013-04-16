@@ -231,7 +231,7 @@ public class MSSQLDatabase extends AbstractDatabase {
         try {
             return this.getDatabaseMajorVersion() > 10;
         } catch (DatabaseException e) {
-            return true;
+            return false;
         }
     }
 
